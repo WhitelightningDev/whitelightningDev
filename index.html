@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap css -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+
+    <!-- Include AOS CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css">
+
+    <!-- External css -->
+    <link rel="stylesheet" href="scss/styles.css">
+
+    <script src="https://www.gstatic.com/firebasejs/ui/6.0.1/firebase-ui-auth.js"></script>
+    <!-- Page title -->
+    <title>Home</title>
+</head>
+
+<!-- Bootstrap navigation start -->
+<nav class="navbar navbar-expand-xl navbar-dark pt-0 mb-5 bg-dark" aria-label="Sixth navbar example">
+    <div class="container-fluid">
+
+        <!-- logo and site name -->
+        <a href="index.html"> <img src="images/system-solid-117-bolt-2.gif" class="bg-dark p-2 m-2 rounded" alt=""
+                style="padding-left: 20px;"></a>
+        <a class="navbar-brand" style="padding-left: 20px;" href="index.html">Whitelightning Dev</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarsExample06"
+            aria-controls="navbarsExample06" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <!-- Navihgation links -->
+        <div class="collapse navbar-collapse" id="navbarsExample06">
+            <ul class="navbar-nav me-auto mb-2 mb-xl-0">
+                <!-- Home page -->
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                </li>
+                <!-- Prices page -->
+                <li class="nav-item">
+                    <a class="nav-link" href="prices.html">Pricing</a>
+                </li>
+                <!-- What we do page -->
+                <li class="nav-item">
+                    <a class="nav-link" aria-disabled="false" href="whatwedo.html">What We Do</a>
+                </li>
+                <!-- More Drop Down -->
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown"
+                        aria-expanded="false">More</a>
+                    <ul class="dropdown-menu">
+                        <li><a class="dropdown-item" href="signup.html">Sign Up</a></li>
+                        <li id="profile-link" class="d-none"><a class="dropdown-item" href="profile.html">Profile</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form role="search">
+                <input class="form-control" type="search" placeholder="Search" aria-label="Search">
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Bootstrap navigation end -->
+
+<!-- Start of the body -->
+
+<body class="bg-secondary-subtle ">
+
+    <!-- Fist container  -->
+    <div
+        class=" content row p-3 pb-4 mt-5 pe-lg-0 pt-lg-5 m-3 pb-5 bg-light align-items-center rounded-5 border  shadow-lg">
+        <div class="col-lg-7 p-2 p-lg-5 pt-lg-3">
+            <!-- H1 Heading text-->
+            <h1 id="heading" class="display-6 fw-bold lh-2 text-body-emphasis" data-aos="fade-up">Creating Digital
+                Experiences That <h1 class="display-3 fw-bold" data-aos="fade-down">Wow!</h1>
+            </h1>
+
+            <!-- Paragraph text  -->
+            <p class="lead" data-aos="fade-up">I'm Daniel, a web developer and designer dedicated to creating visually
+                stunning, user-friendly websites. Whether you're an artist, entrepreneur, or small business owner, I'm
+                here to bring your online vision to life with style and functionality.</p>
+
+        </div>
+        <!-- div for the container image -->
+        <div data-aos="fade-left" class="col-lg-4 offset-lg-1 p-0 rounded-5 overflow-hidden bg-transparent shadow-lg">
+            <img class="rounded" src="images/web-design-AdobeStock_260516386-removebg-preview.png" alt="" width="550"
+                height="400">
+        </div>
+    </div>
+
+    <!-- Services section -->
+    <div class="container px-3 py-5" id="icon-grid">
+        <h2 class="pb-2 border-bottom " data-aos="fade-up">Services</h2>
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 row-cols-lg-4 g-4 py-5">
+            <div class="col d-flex align-items-start" data-aos="fade-up">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <use xlink:href="#bootstrap" />
+                </svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Responsive Web Design</h3>
+                    <p>Elevate your online presence with a responsive web design that looks stunning on all devices.
+                        From smartphones to desktops, your website will adapt seamlessly, providing an exceptional user
+                        experience.</p>
+                        <img src="images/0-responsive-web-design-hero-image-removebg-preview.png" alt="Service 1 Image"
+                        width="250px" data-aos="fade-right">
+                </div>
+            </div>
+
+            <div class="col d-flex align-items-start" data-aos="fade-up">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <use xlink:href="#cpu-fill" />
+                </svg>
+                <div>
+                    <h3 
+                    class="fw-bold mb-0 fs-4 text-body-emphasis">E-Commerce Development
+                    </h3>
+                    <p>Turn your online store dreams into reality with our e-commerce expertise. We create visually
+                        appealing and user-friendly online shops that drive sales and engage customers.
+                    </p>
+                    <img src="images/247-2475040_ecommerce-ecommerce-development.png-removebg-preview.png"
+                        alt="Service 1 Image" width="250px" data-aos="fade-up" class="pt-1">
+                </div>
+            </div>
+            <div class="col d-flex align-items-start" data-aos="fade-up">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <use xlink:href="#calendar3"/>
+                </svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Custom Web Applications</h3>
+                    <p>Need a unique solution for your business? Our custom web applications are designed to meet your
+                        specific needs. We develop powerful, intuitive tools that streamline your operations and delight
+                        your users.
+                    </p>
+                    <img class="pb-3"
+                        src="images/Why-Custom-Web-Application-Development-Should-be-the-Focus-of-Your-Business-1-removebg-preview.png"
+                        alt="Service 1 Image" width="250px" data-aos="fade-up">
+                </div>
+            </div>
+            <div class="col d-flex align-items-start" data-aos="fade-up">
+                <svg class="bi text-body-secondary flex-shrink-0 me-3" width="1.75em" height="1.75em">
+                    <use xlink:href="#home" />
+                </svg>
+                <div>
+                    <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">SEO Optimization</h3>
+                    <p class="pb-3">Improve your website's visibility and rankings on search engines. Our SEO experts
+                        employ proven
+                        strategies to increase organic traffic, making your site stand out in the crowded digital
+                        landscape.</p>
+                    <img class="pt-5" src="images/VCG-7th-Featured-Image-2-removebg-preview.png" alt="Service 1 Image"
+                        width="250px" data-aos="fade-up">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Web page showcase -->
+
+    <div data-aos="fade-left" class="content row p-3 pb-4 mt-5 pe-lg-0 pt-lg-5 m-3 pb-5 bg-light align-items-center rounded-5 border  shadow-lg">
+        <h1 data-aos="fade-up" data-aos="fade-left" class="display-5 fw-bold text-body-emphasis">JET SKI AND MORE</h1>
+        <div data-aos="fade-up" data-aos="fade-left" class="col-lg-6 mx-auto">
+          <p  data-aos="fade-left" class="lead mb-4">Jet Ski and More: Your hassle-free platform for jet ski rentals. Easy booking, weather checks, safety videos, and smooth transactions - all in one place!</p>
+          <div data-aos="fade-up" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <a  href="https://www.jetskiandmore.com"><button type="button" class="btn btn-primary btn-lg px-4 me-sm-3">View site</button></a>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img data-aos="fade-up" src="images/jetskiandmoreimage.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+      <div data-aos="fade-right" class="content row p-3 pb-4 mt-5 pe-lg-0 pt-lg-5 m-3 pb-5 bg-light align-items-center rounded-5 border  shadow-lg">
+        <h1 data-aos="fade-right" class="display-5 fw-bold text-body-emphasis">CRAFTERS BOUTIQUE</h1>
+        <div data-aos="fade-right" class="col-lg-6 mx-auto">
+          <p data-aos="fade-right" class="lead mb-4">Quickly design and customize responsive mobile-first sites with Bootstrap, the world’s most popular front-end open source toolkit, featuring Sass variables and mixins, responsive grid system, extensive prebuilt components, and powerful JavaScript plugins.</p>
+          <div data-aos="fade-up" class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+            <button  type="button" class="btn btn-primary btn-lg px-4 me-sm-3">View site</button>
+          </div>
+        </div>
+        <div class="overflow-hidden" style="max-height: 30vh;">
+          <div class="container px-5">
+            <img data-aos="fade-up" src="images/craftersimage.png" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+          </div>
+        </div>
+      </div>
+
+
+
+
+
+
+      <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
+      crossorigin="anonymous"></script>
+      <!-- Include AOS library script -->
+      <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+      <!-- Initialize AOS -->
+      <script>
+          AOS.init();
+      </script>
+      <script src="javascript/index.js"></script>
+      <script type="module" src="javascript/firebase.js"></script>
+</body>
+<!-- footer start -->
+<div class="container">
+    <footer class="py-5" data-aos="fade-up">
+        <div class="row">
+            <div class="col-6 col-md-2 mb-2">
+                <h5>Section</h5>
+                <ul class="nav flex-column">
+                    <li class="nav-item mb-2"><a href="index.html" class="nav-link p-0 text-body-secondary">Home</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="prices.html" class="nav-link p-0 text-body-secondary">Pricing</a>
+                    </li>
+                    <li class="nav-item mb-2"><a href="faq.html" class="nav-link p-0 text-body-secondary">FAQs</a></li>
+                    <li class="nav-item mb-2"><a href="about.html" class="nav-link p-0 text-body-secondary">About</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-md-5 offset-md-5 mb-3">
+                <form>
+                    <h5>Contact me to get a free consultation</h5>
+                    <p>Drop your email below</p>
+                    <div class="d-flex flex-column flex-sm-row w-100 gap-2">
+                        <label for="newsletter1" class="visually-hidden">Email address</label>
+                        <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
+                        <button class="btn btn-primary" type="button">Subscribe</button>
+                    </div>
+                </form>
+            </div>
+            
+            <!-- Toast HTML -->
+            <div class="toast" role="alert" aria-live="assertive" aria-atomic="true" style="display: none;">
+              <div class="toast-header">
+                <img src="..." class="rounded me-2" alt="...">
+                <strong class="me-auto">Bootstrap</strong>
+                <small>11 mins ago</small>
+                <button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+              </div>
+              <div class="toast-body">
+                Thank you for your interest! We'll contact you soon.
+              </div>
+            </div>
+
+            <div class="d-flex flex-column flex-sm-row justify-content-between py-4 my-4 border-top">
+                <p>&copy; 2023 WhitelightningDev, Inc. All rights reserved.</p>
+                <ul class="list-unstyled d-flex">
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="images/instagram.png" width="24px" height="24px" alt="" srcset=""></a></li>
+                    <li class="ms-3"><a class="link-body-emphasis" href="#"><img src="images/facebook.png" width="24px" height="24px" alt="" srcset=""></a></li>
+                </ul>
+            </div>
+    </footer>
+</div>
+<!-- Footer end -->
+
+</html>

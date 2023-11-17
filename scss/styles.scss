@@ -1,0 +1,59 @@
+body{
+    margin: 0;
+    padding: 0;
+    z-index: -1;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+// navigation 
+/* styles.css */
+.nav-link {
+    transition: color 0.3s ease; /* Add smooth color transition on hover */
+}
+
+.nav-link:hover {
+    color: #ff6600; /* Change the text color on hover to your desired color */
+}
+
+
+
+// Body contents
+.animation-element {
+    width: 100px;
+    height: 100px;
+    background-color: #3498db;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.5s, transform 0.5s;
+}
+
+
+
+.content {
+    text-align: center;
+    margin-top: 300px; /* Create space for the animation to be revealed */
+}
+
+
+/* CSS for the card image */
+.card-image {
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+    min-height: 200px; /* Adjust the minimum height as needed */
+}
+
+
+.google-signup-image{
+    width: 60px;
+    
+}
+
+
+// breaklines
+br{
+  margin-top: 100px;
+}
