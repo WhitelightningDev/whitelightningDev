@@ -23,6 +23,14 @@ class Premium_features extends HTMLElement {
             padding: 10px;
             /* Add more custom styles as needed */
           }
+          .Premium_button{
+            width: 120px;
+            height: 50px;
+            border-radius: 15px;
+            border: 1px solid;
+            background-color: lightblue;
+            color: white;
+        }
 
           h1{
             text-align:center;
@@ -108,9 +116,13 @@ class Premium_features extends HTMLElement {
             <h3 class="fw-bold mb-0 fs-4 text-body-emphasis">Support and Maintenance</h3>
             <p>Ongoing technical support, maintenance, and updates to ensure the website remains functional, secure, and up-to-date with the latest standards.</p>
           </div>
+          
         </div>
+        
           </div>
+          <button href="features.html" class="Premium_button" type="button">Contact us</button>
         </div>
+        
         </div>
       `;
   }
